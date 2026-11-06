@@ -1,1 +1,317 @@
-aW1wb3J0IG9yZy5qZXRicmFpbnMua290bGluLmdyYWRsZS5kc2wuSnZtVGFyZ2V0CmltcG9ydCBqYXZhLm5ldC5VUkkKaW1wb3J0IGphdmEudXRpbC5Qcm9wZXJ0aWVzCmltcG9ydCBqYXZhLnV0aWwuVVVJRAoKcGx1Z2lucyB7CiAgICBhbGlhcyhsaWJzLnBsdWdpbnMuYW5kcm9pZC5hcHBsaWNhdGlvbikKICAgIGFsaWFzKGxpYnMucGx1Z2lucy5rb3RsaW4uY29tcG9zZSkKfQoKLy8g562+5ZCN6YWN572u77yIwqc3LjPvvInvvJrkvJjlhYjor7vlj5Yga2V5c3RvcmUucHJvcGVydGllc++8iOW3siBnaXRpZ25vcmXvvIzkuI3lhaXlupPvvInjgIIKLy8g5paH5Lu25LiN5a2Y5Zyo5pe277yI5pys5ZywIGRlYnVnIC8g5pyq6YWN572u5a+G6ZKl55qEIENJ77yJ5LiN5rOo5YaM562+5ZCN6YWN572u77yMcmVsZWFzZSDkuqfniakKLy8g5LiN562+5ZCN77yb5q2j5byP5Y+R5biD57uPIHJlbGVhc2UueW1sIOS7jiBHaXRIdWIgU2VjcmV0cyDms6jlhaXjgIIKdmFsIGtleXN0b3JlUHJvcGVydGllcyA9IFByb3BlcnRpZXMoKS5hcHBseSB7CiAgICB2YWwgZmlsZSA9IHJvb3RQcm9qZWN0LmZpbGUoImtleXN0b3JlLnByb3BlcnRpZXMiKQogICAgaWYgKGZpbGUuZXhpc3RzKCkpIGZpbGUuaW5wdXRTdHJlYW0oKS51c2UgeyBsb2FkKGl0KSB9Cn0KCi8vID09PT09PT09PT09PT09PT09PT09IOmBpea1i+aehOW7uumFjee9ru+8iOS4peagvOagoemqjOS4jui/kOihjOaXtuetieS7t++8iSA9PT09PT09PT09PT09PT09PT09PQovLyDlhazlvIDku5PlupPkuI3mmrTpnLLoh6rlu7rmnI3liqHlmajlnLDlnYDvvJrnu7TmiqTogIXnu48gbG9jYWwucHJvcGVydGllcyDmiJYgQ0kg546v5aKD5Y+Y6YeP5rOo5YWl44CCCi8vIOi/memHjOS4jiBUZWxlbWV0cnlDb25maWdWYWxpZGF0b3Ig5L2/55So5ZCM5LiA5aWX6KeE5YiZ77yb5Lu75LiA5YC86Z2e5rOV6YO95ouS57ud5p6E5bu677yM6YG/5YWNCi8vIOaJk+WHuuKAnOeci+i1t+adpeW3suWQr+eUqOOAgeWunumZheWFqOmDqOefrei3r+KAneeahOWMheOAggp2YWwgbG9jYWxQcm9wZXJ0aWVzID0gUHJvcGVydGllcygpLmFwcGx5IHsKICAgIHZhbCBmaWxlID0gcm9vdFByb2plY3QuZmlsZSgibG9jYWwucHJvcGVydGllcyIpCiAgICBpZiAoZmlsZS5leGlzdHMoKSkgZmlsZS5pbnB1dFN0cmVhbSgpLnVzZSB7IGxvYWQoaXQpIH0KfQp2YWwgdW1hbWlFbmRwb2ludCA9IChsb2NhbFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoInVtYW1pLmVuZHBvaW50IikKICAgID86IHByb3ZpZGVycy5lbnZpcm9ubWVudFZhcmlhYmxlKCJVTUFNSV9FTkRQT0lOVCIpLm9yTnVsbCA/OiAiIikudHJpbSgpCnZhbCB1bWFtaVdlYnNpdGVJZCA9IChsb2NhbFByb3BlcnRpZXMuZ2V0UHJvcGVydHkoInVtYW1pLndlYnNpdGVJZCIpCiAgICA/OiBwcm92aWRlcnMuZW52aXJvbm1lbnRWYXJpYWJsZSgiVU1BTUlfV0VCU0lURV9JRCIpLm9yTnVsbCA/OiAiIikudHJpbSgpCnZhbCBkZWJ1Z1VtYW1pRW5kcG9pbnQgPSAobG9jYWxQcm9wZXJ0aWVzLmdldFByb3BlcnR5KCJ1bWFtaS5kZWJ1Z0VuZHBvaW50IikKICAgID86IHByb3ZpZGVycy5lbnZpcm9ubWVudFZhcmlhYmxlKCJVTUFNSV9ERUJVR19FTkRQT0lOVCIpLm9yTnVsbCA/OiAiIikudHJpbSgpCnZhbCBkZWJ1Z1VtYW1pV2Vic2l0ZUlkID0gKGxvY2FsUHJvcGVydGllcy5nZXRQcm9wZXJ0eSgidW1hbWkuZGVidWdXZWJzaXRlSWQiKQogICAgPzogcHJvdmlkZXJzLmVudmlyb25tZW50VmFyaWFibGUoIlVNQU1JX0RFQlVHX1dFQlNJVEVfSUQiKS5vck51bGwgPzogIiIpLnRyaW0oKQp2YWwgdGVsZW1ldHJ5UmVxdWlyZWQgPSAocHJvdmlkZXJzLmdyYWRsZVByb3BlcnR5KCJ0ZWxlbWV0cnlSZXF1aXJlZCIpLm9yTnVsbAogICAgPzogcHJvdmlkZXJzLmVudmlyb25tZW50VmFyaWFibGUoIlRBTEtJRllfUkVRVUlSRV9URUxFTUVUUlkiKS5vck51bGwpCiAgICA/LmVxdWFscygidHJ1ZSIsIGlnbm9yZUNhc2UgPSB0cnVlKSA9PSB0cnVlCgp2YWwgVEVMRU1FVFJZX1VVSURfUEFUVEVSTiA9CiAgICBSZWdleCgiXlswLTlhLWZBLUZdezh9LVswLTlhLWZBLUZdezR9LVswLTlhLWZBLUZdezR9LVswLTlhLWZBLUZdezR9LVswLTlhLWZBLUZdezEyfSQiKQoKLyoqIOi/lOWbnumUmeivr+ivtOaYju+8m251bGwg6KGo56S66YWN572u5ZCI5rOV44CC56m65YC855Sx6LCD55So5pa55oyJ4oCc5pyq6YWN572u4oCd5aSE55CG44CCICovCmZ1biB0ZWxlbWV0cnlDb25maWdFcnJvcihlbmRwb2ludDogU3RyaW5nLCB3ZWJzaXRlSWQ6IFN0cmluZyk6IFN0cmluZz8gewogICAgaWYgKGVuZHBvaW50LmlzQmxhbmsoKSB8fCB3ZWJzaXRlSWQuaXNCbGFuaygpKSByZXR1cm4gImVuZHBvaW50IOS4jiB3ZWJzaXRlSWQg5b+F6aG75ZCM5pe25o+Q5L6bIgogICAgaWYgKGVuZHBvaW50LmFueSB7IGl0LmlzV2hpdGVzcGFjZSgpIHx8IGl0LmlzSVNPQ29udHJvbCgpIH0pIHJldHVybiAiZW5kcG9pbnQg5ZCr56m655m95oiW5o6n5Yi25a2X56ymIgogICAgaWYgKCFURUxFTUVUUllfVVVJRF9QQVRURVJOLm1hdGNoZXMod2Vic2l0ZUlkKSkgcmV0dXJuICJ3ZWJzaXRlSWQg5LiN5pivIFVVSUQiCiAgICBpZiAocnVuQ2F0Y2hpbmcgeyBVVUlELmZyb21TdHJpbmcod2Vic2l0ZUlkKSB9LmlzRmFpbHVyZSkgcmV0dXJuICJ3ZWJzaXRlSWQg5LiN5pivIFVVSUQiCiAgICB2YWwgdXJpID0gcnVuQ2F0Y2hpbmcgeyBVUkkoZW5kcG9pbnQpIH0uZ2V0T3JOdWxsKCkgPzogcmV0dXJuICJlbmRwb2ludCDkuI3mmK/lkIjms5UgVVJJIgogICAgaWYgKCF1cmkuc2NoZW1lLmVxdWFscygiaHR0cHMiLCBpZ25vcmVDYXNlID0gdHJ1ZSkpIHJldHVybiAiZW5kcG9pbnQg5b+F6aG75Li6IEhUVFBTIgogICAgaWYgKHVyaS5ob3N0LmlzTnVsbE9yQmxhbmsoKSkgcmV0dXJuICJlbmRwb2ludCDnvLrlsJEgaG9zdCIKICAgIGlmICh1cmkucG9ydCA9PSAwIHx8IHVyaS5wb3J0ID4gNjU1MzUpIHJldHVybiAiZW5kcG9pbnQg56uv5Y+j6Z2e5rOVIgogICAgaWYgKCF1cmkudXNlckluZm8uaXNOdWxsT3JFbXB0eSgpKSByZXR1cm4gImVuZHBvaW50IOS4jeW+l+WMheWQq+WHreaNriIKICAgIGlmICh1cmkucmF3UXVlcnkgIT0gbnVsbCkgcmV0dXJuICJlbmRwb2ludCDkuI3lvpfljIXlkKsgcXVlcnkiCiAgICBpZiAodXJpLnJhd0ZyYWdtZW50ICE9IG51bGwpIHJldHVybiAiZW5kcG9pbnQg5LiN5b6X5YyF5ZCrIGZyYWdtZW50IgogICAgcmV0dXJuIG51bGwKfQoKdmFsIHJlbGVhc2VDb25maWdFcnJvciA9IGlmICh1bWFtaUVuZHBvaW50LmlzQmxhbmsoKSAmJiB1bWFtaVdlYnNpdGVJZC5pc0JsYW5rKCkpIHsKICAgIG51bGwKfSBlbHNlIHsKICAgIHRlbGVtZXRyeUNvbmZpZ0Vycm9yKHVtYW1pRW5kcG9pbnQsIHVtYW1pV2Vic2l0ZUlkKQp9CmlmIChyZWxlYXNlQ29uZmlnRXJyb3IgIT0gbnVsbCkgewogICAgdGhyb3cgR3JhZGxlRXhjZXB0aW9uKCLpgaXmtYvphY3nva7pnZ7ms5XvvJokcmVsZWFzZUNvbmZpZ0Vycm9yIikKfQppZiAodGVsZW1ldHJ5UmVxdWlyZWQgJiYgKHVtYW1pRW5kcG9pbnQuaXNCbGFuaygpIHx8IHVtYW1pV2Vic2l0ZUlkLmlzQmxhbmsoKSkpIHsKICAgIHRocm93IEdyYWRsZUV4Y2VwdGlvbigi6YGl5rWL6YWN572u6KKr5aOw5piO5Li65b+F6ZyA77yIdGVsZW1ldHJ5UmVxdWlyZWQ9dHJ1Ze+8ie+8jOS9hiB1bWFtaS5lbmRwb2ludCAvIHVtYW1pLndlYnNpdGVJZCDnvLrlpLEiKQp9CnZhbCB0ZWxlbWV0cnlTdGF0dXMgPSBpZiAodW1hbWlFbmRwb2ludC5pc0JsYW5rKCkgfHwgdW1hbWlXZWJzaXRlSWQuaXNCbGFuaygpKSB7CiAgICAiVGVsZW1ldHJ5OiBESVNBQkxFRCAobWlzc2luZyBjb25maWd1cmF0aW9uKSIKfSBlbHNlIHsKICAgICJUZWxlbWV0cnk6IEVOQUJMRUQgKHZhbGlkYXRlZCBlbmRwb2ludCBhbmQgd2Vic2l0ZSBJRCkiCn0KCnZhbCBkZWJ1Z0NvbmZpZ0Vycm9yID0gaWYgKGRlYnVnVW1hbWlFbmRwb2ludC5pc0JsYW5rKCkgJiYgZGVidWdVbWFtaVdlYnNpdGVJZC5pc0JsYW5rKCkpIHsKICAgIG51bGwKfSBlbHNlIHsKICAgIHRlbGVtZXRyeUNvbmZpZ0Vycm9yKGRlYnVnVW1hbWlFbmRwb2ludCwgZGVidWdVbWFtaVdlYnNpdGVJZCkKfQppZiAoZGVidWdDb25maWdFcnJvciAhPSBudWxsKSB7CiAgICB0aHJvdyBHcmFkbGVFeGNlcHRpb24oImRlYnVnIOmBpea1i+mFjee9rumdnuazle+8miRkZWJ1Z0NvbmZpZ0Vycm9yIikKfQp2YWwgZGVidWdUZWxlbWV0cnlTdGF0dXMgPSBpZiAoZGVidWdVbWFtaUVuZHBvaW50LmlzQmxhbmsoKSB8fCBkZWJ1Z1VtYW1pV2Vic2l0ZUlkLmlzQmxhbmsoKSkgewogICAgIlRlbGVtZXRyeShkZWJ1Zyk6IERJU0FCTEVEIChtaXNzaW5nIGRlYnVnIGNvbmZpZ3VyYXRpb24pIgp9IGVsc2UgewogICAgIlRlbGVtZXRyeShkZWJ1Zyk6IEVOQUJMRUQgKHZhbGlkYXRlZCBkZWJ1ZyBlbmRwb2ludCBhbmQgd2Vic2l0ZSBJRCkiCn0KCi8qKiDmiorku7vmhI/phY3nva7lgLzovazkuYnkuLogSmF2YS9Lb3RsaW4g5a2X56ym5Liy5a2X6Z2i6YeP77yM6YG/5YWN5byV5Y+3L+WPjeaWnOadoOazqOWFpSBCdWlsZENvbmZpZyAqLwpmdW4gamF2YVN0cmluZ0xpdGVyYWwodmFsdWU6IFN0cmluZyk6IFN0cmluZyA9IGJ1aWxkU3RyaW5nIHsKICAgIGFwcGVuZCgnIicpCiAgICB2YWx1ZS5mb3JFYWNoIHsgY2hhciAtPgogICAgICAgIHdoZW4gKGNoYXIpIHsKICAgICAgICAgICAgJ1xcJyAtPiBhcHBlbmQoIlxcXFwiKQogICAgICAgICAgICAnIicgLT4gYXBwZW5kKCJcXFwiIikKICAgICAgICAgICAgJ1xuJyAtPiBhcHBlbmQoIlxcbiIpCiAgICAgICAgICAgICdccicgLT4gYXBwZW5kKCJcXHIiKQogICAgICAgICAgICAnXHQnIC0+IGFwcGVuZCgiXFx0IikKICAgICAgICAgICAgZWxzZSAtPiBpZiAoY2hhci5jb2RlIDwgMHgyMCkgYXBwZW5kKCJcXHUlMDR4Ii5mb3JtYXQoY2hhci5jb2RlKSkgZWxzZSBhcHBlbmQoY2hhcikKICAgICAgICB9CiAgICB9CiAgICBhcHBlbmQoJyInKQp9Cgp2YWwgd3JpdGVUZWxlbWV0cnlTdGF0dXMgPSB0YXNrcy5yZWdpc3Rlcigid3JpdGVUZWxlbWV0cnlTdGF0dXMiKSB7CiAgICB2YWwgcmVsZWFzZSA9IHRlbGVtZXRyeVN0YXR1cwogICAgdmFsIGRlYnVnID0gZGVidWdUZWxlbWV0cnlTdGF0dXMKICAgIHZhbCBvdXRwdXQgPSBsYXlvdXQuYnVpbGREaXJlY3RvcnkuZmlsZSgidGVsZW1ldHJ5L3RlbGVtZXRyeS1zdGF0dXMudHh0IikKICAgIGlucHV0cy5wcm9wZXJ0eSgicmVsZWFzZVN0YXR1cyIsIHJlbGVhc2UpCiAgICBpbnB1dHMucHJvcGVydHkoImRlYnVnU3RhdHVzIiwgZGVidWcpCiAgICBvdXRwdXRzLmZpbGUob3V0cHV0KQogICAgZG9MYXN0IHsKICAgICAgICB2YWwgZmlsZSA9IG91dHB1dC5nZXQoKS5hc0ZpbGUKICAgICAgICBmaWxlLnBhcmVudEZpbGUubWtkaXJzKCkKICAgICAgICBmaWxlLndyaXRlVGV4dCgiJHJlbGVhc2VcbiRkZWJ1Z1xuIikKICAgIH0KfQoKdGFza3MubWF0Y2hpbmcgeyBpdC5uYW1lID09ICJhc3NlbWJsZVJlbGVhc2UiIH0uY29uZmlndXJlRWFjaCB7CiAgICBkZXBlbmRzT24od3JpdGVUZWxlbWV0cnlTdGF0dXMpCn0KCi8qKgogKiDmnoTlu7rkvqfmoKHpqoznn6npmLXvvJrkuI7ov5DooYzml7bljZXmtYvkvb/nlKjlkIzkuIDnu4TnlKjkvovjgIIKICog5Y+q6aqM6K+B57qv5Ye95pWw77yM5LiN6K+75Y+W55yf5a6e6YWN572u77yM5Lmf5LiN6K6/6Zeu572R57uc44CCCiAqLwp2YWwgdGVsZW1ldHJ5VmFsaWRhdGlvblJlc3VsdHM6IExpc3Q8U3RyaW5nPiA9IHJ1biB7CiAgICB2YWwgdmFsaWRJZCA9ICIxMjNlNDU2Ny1lODliLTEyZDMtYTQ1Ni00MjY2MTQxNzQwMDAiCiAgICBsaXN0T2YoCiAgICAgICAgVHJpcGxlKCJodHRwczovL3RlbGVtZXRyeS5leGFtcGxlLmNvbSIsIHZhbGlkSWQsIHRydWUpLAogICAgICAgIFRyaXBsZSgiaHR0cHM6Ly90ZWxlbWV0cnkuZXhhbXBsZS5jb20vdW1hbWkiLCB2YWxpZElkLCB0cnVlKSwKICAgICAgICBUcmlwbGUoImh0dHBzOi8vLyIsIHZhbGlkSWQsIGZhbHNlKSwKICAgICAgICBUcmlwbGUoImh0dHBzOi8vZXhhbXBsZS5jb20vJXp6IiwgdmFsaWRJZCwgZmFsc2UpLAogICAgICAgIFRyaXBsZSgiaHR0cHM6Ly91c2VyOnBhc3NAZXhhbXBsZS5jb20iLCB2YWxpZElkLCBmYWxzZSksCiAgICAgICAgVHJpcGxlKCJodHRwczovL2V4YW1wbGUuY29tP3g9MSIsIHZhbGlkSWQsIGZhbHNlKSwKICAgICAgICBUcmlwbGUoImh0dHBzOi8vZXhhbXBsZS5jb20jZnJhZyIsIHZhbGlkSWQsIGZhbHNlKSwKICAgICAgICBUcmlwbGUoImh0dHA6Ly9leGFtcGxlLmNvbSIsIHZhbGlkSWQsIGZhbHNlKSwKICAgICAgICBUcmlwbGUoImh0dHBzOi8vZXhhbXBsZS5jb206OTk5OTkiLCB2YWxpZElkLCBmYWxzZSksCiAgICAgICAgVHJpcGxlKCJodHRwczovL2V4YW1wbGUuY29tIiwgIi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSIsIGZhbHNlKSwKICAgICAgICBUcmlwbGUoImh0dHBzOi8vZXhhbXBsZS5jb20iLCAiMTIzZTQ1NjctZTg5Yi0xMmQzLWE0NTYtNDI2NjE0MTc0MDAiLCBmYWxzZSksCiAgICApLm1hcCB7IChlbmRwb2ludCwgd2Vic2l0ZUlkLCBleHBlY3RlZFZhbGlkKSAtPgogICAgICAgIHZhbCBhY3R1YWxWYWxpZCA9IHRlbGVtZXRyeUNvbmZpZ0Vycm9yKGVuZHBvaW50LCB3ZWJzaXRlSWQpID09IG51bGwKICAgICAgICAiZW5kcG9pbnQ9JGVuZHBvaW50IHdlYnNpdGVJZD0kd2Vic2l0ZUlkIGV4cGVjdGVkPSRleHBlY3RlZFZhbGlkIGFjdHVhbD0kYWN0dWFsVmFsaWQgb2s9JHthY3R1YWxWYWxpZCA9PSBleHBlY3RlZFZhbGlkfSIKICAgIH0KfQoKdGFza3MucmVnaXN0ZXIoInZlcmlmeVRlbGVtZXRyeUNvbmZpZ01hdHJpeCIpIHsKICAgIHZhbCByZXN1bHRzID0gdGVsZW1ldHJ5VmFsaWRhdGlvblJlc3VsdHMKICAgIGRvTGFzdCB7CiAgICAgICAgcmVzdWx0cy5mb3JFYWNoIHsgbGluZSAtPgogICAgICAgICAgICBjaGVjayhsaW5lLmVuZHNXaXRoKCJvaz10cnVlIikpIHsgIumBpea1i+mFjee9ruagoemqjOefqemYteS4jeS4gOiHtDogJGxpbmUiIH0KICAgICAgICB9CiAgICB9Cn0KCmFuZHJvaWQgewogICAgbmFtZXNwYWNlID0gImNvbS5naXRodWIubG9uZXBoZWFzYW50d2Fycmlvci50YWxraWZ5IgogICAgY29tcGlsZVNkayB7CiAgICAgICAgdmVyc2lvbiA9IHJlbGVhc2UoMzcpCiAgICB9CgogICAgZGVmYXVsdENvbmZpZyB7CiAgICAgICAgYXBwbGljYXRpb25JZCA9ICJjb20uZ2l0aHViLmxvbmVwaGVhc2FudHdhcnJpb3IudGFsa2lmeS5mb3JrIgogICAgICAgIG1pblNkayA9IDI0CiAgICAgICAgdGFyZ2V0U2RrID0gMzcKICAgICAgICB2ZXJzaW9uQ29kZSA9IDM5MDEKICAgICAgICB2ZXJzaW9uTmFtZSA9ICIxLjAuMzctZm9yay4xIgoKICAgICAgICB0ZXN0SW5zdHJ1bWVudGF0aW9uUnVubmVyID0gImFuZHJvaWR4LnRlc3QucnVubmVyLkFuZHJvaWRKVW5pdFJ1bm5lciIKCiAgICAgICAgLy8g5LiOIHNwbGl0cy5hYmkuaW5jbHVkZSDkv53mjIHkuIDoh7TvvJp1bml2ZXJzYWwg5YyF5pS25b2V55qE5piv6YCa6L+HIGFiaUZpbHRlcnMg55qE5YWo6YOoIEFCSQogICAgICAgIC8vIO+8iHNwbGl0cy5pbmNsdWRlIOWPque6puadn+eLrOeriyBBUEvvvInvvIx4ODYg6ZyA5Zyo5q2k5o6S6Zmk4oCU4oCU5YW25byV5pOO5bqT5LuN5ZCr5YWo6YePIG9ubnhydW50aW1lCiAgICAgICAgbmRrIHsKICAgICAgICAgICAgYWJpRmlsdGVycyArPSBsaXN0T2YoImFybTY0LXY4YSIsICJ4ODZfNjQiKQogICAgICAgIH0KCiAgICAgICAgLy8g5Yy/5ZCN6YGl5rWL6YWN572u5Zyo5paH5Lu26aG26YOo57uf5LiA6Kej5p6Q5bm25Lil5qC85qCh6aqM77yb6L+Z6YeM5Y+q6LSf6LSj5rOo5YWl44CCCiAgICAgICAgLy8g57uPIHByb3ZpZGVycy5lbnZpcm9ubWVudFZhcmlhYmxlIOivu+WPlu+8iOiAjOmdniBTeXN0ZW0uZ2V0ZW5277yJ77yaY29uZmlndXJhdGlvbgogICAgICAgIC8vIGNhY2hlIOWwhuWFtui/vei4quS4uui+k+WFpe+8jOeOr+Wig+WPmOmHj+WPmOWMluS8muinpuWPkemHjeaWsOmFjee9ru+8jOmBv+WFjeWkjeeUqOe8k+WtmOadoeebruaJk+WHuuaXp+WAvOOAggogICAgICAgIGlmICh0ZWxlbWV0cnlTdGF0dXMuY29udGFpbnMoIkRJU0FCTEVEIikpIHsKICAgICAgICAgICAgbG9nZ2VyLmxpZmVjeWNsZSgi5o+Q56S677ya5pyq5rOo5YWl55Sf5LqnIFVtYW1pIOmFjee9ru+8jHJlbGVhc2Ug5YyF6YGl5rWL5bCG5YWo6YOo55+t6Lev77yI5Y+R5biD6K6w5b2V6aG75rOo5piO77yJIikKICAgICAgICB9CiAgICAgICAgYnVpbGRDb25maWdGaWVsZCgiU3RyaW5nIiwgIlVNQU1JX0VORFBPSU5UIiwgamF2YVN0cmluZ0xpdGVyYWwodW1hbWlFbmRwb2ludCkpCiAgICAgICAgYnVpbGRDb25maWdGaWVsZCgiU3RyaW5nIiwgIlVNQU1JX1dFQlNJVEVfSUQiLCBqYXZhU3RyaW5nTGl0ZXJhbCh1bWFtaVdlYnNpdGVJZCkpCiAgICB9CgogICAgc3BsaXRzIHsKICAgICAgICBhYmkgewogICAgICAgICAgICBpc0VuYWJsZSA9IHRydWUKICAgICAgICAgICAgcmVzZXQoKQogICAgICAgICAgICAvLyDkuIDmrKHmnoTlu7rkuqflh7ogYXJtNjQtdjhhIC8gYXJtZWFiaS12N2EgLyB4ODZfNjQg54us56uLIEFQSyArIHVuaXZlcnNhbCDlhZzlupXljIUKICAgICAgICAgICAgLy8geDg2IOS4jeWGjeaJk+WMhe+8muecn+WunuiuvuWkh+S4jeWtmOWcqO+8jOS4lCBzdGF0aWMtbGluayBBQVIg55qEIHg4NiDlvJXmk47lupPku43lkKvni6znq4sgb25ueHJ1bnRpbWXvvIgzNC41TULvvIkKICAgICAgICAgICAgaW5jbHVkZSgiYXJtNjQtdjhhIiwgImFybWVhYmktdjdhIiwgIng4Nl82NCIpCiAgICAgICAgICAgIGlzVW5pdmVyc2FsQXBrID0gdHJ1ZQogICAgICAgIH0KICAgIH0KCiAgICBzaWduaW5nQ29uZmlncyB7CiAgICAgICAgaWYgKGtleXN0b3JlUHJvcGVydGllcy5pc05vdEVtcHR5KCkpIHsKICAgICAgICAgICAgY3JlYXRlKCJyZWxlYXNlIikgewogICAgICAgICAgICAgICAgc3RvcmVGaWxlID0gcm9vdFByb2plY3QuZmlsZShrZXlzdG9yZVByb3BlcnRpZXMuZ2V0UHJvcGVydHkoInN0b3JlRmlsZSIpKQogICAgICAgICAgICAgICAgc3RvcmVQYXNzd29yZCA9IGtleXN0b3JlUHJvcGVydGllcy5nZXRQcm9wZXJ0eSgic3RvcmVQYXNzd29yZCIpCiAgICAgICAgICAgICAgICBrZXlBbGlhcyA9IGtleXN0b3JlUHJvcGVydGllcy5nZXRQcm9wZXJ0eSgia2V5QWxpYXMiKQogICAgICAgICAgICAgICAga2V5UGFzc3dvcmQgPSBrZXlzdG9yZVByb3BlcnRpZXMuZ2V0UHJvcGVydHkoImtleVBhc3N3b3JkIikKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KCiAgICBidWlsZFR5cGVzIHsKICAgICAgICBkZWJ1ZyB7CiAgICAgICAgICAgIC8vIFUxM++8mmRlYnVnIOiBlOiwg+WPquS9v+eUqOeLrOeri+a1i+ivleermeeCue+8m+acquaPkOS+myBkZWJ1ZyDphY3nva7ml7bkv53mjIHnqbrlgLzvvIwKICAgICAgICAgICAgLy8g57ud5LiN5Zue6YCA5Yiw55Sf5LqnIGVuZHBvaW50CiAgICAgICAgICAgIGJ1aWxkQ29uZmlnRmllbGQoIlN0cmluZyIsICJVTUFNSV9FTkRQT0lOVCIsIGphdmFTdHJpbmdMaXRlcmFsKGRlYnVnVW1hbWlFbmRwb2ludCkpCiAgICAgICAgICAgIGJ1aWxkQ29uZmlnRmllbGQoIlN0cmluZyIsICJVTUFNSV9XRUJTSVRFX0lEIiwgamF2YVN0cmluZ0xpdGVyYWwoZGVidWdVbWFtaVdlYnNpdGVJZCkpCiAgICAgICAgfQogICAgICAgIHJlbGVhc2UgewogICAgICAgICAgICBpc01pbmlmeUVuYWJsZWQgPSB0cnVlCiAgICAgICAgICAgIGlzU2hyaW5rUmVzb3VyY2VzID0gdHJ1ZQogICAgICAgICAgICBwcm9ndWFyZEZpbGVzKAogICAgICAgICAgICAgICAgZ2V0RGVmYXVsdFByb2d1YXJkRmlsZSgicHJvZ3VhcmQtYW5kcm9pZC1vcHRpbWl6ZS50eHQiKSwKICAgICAgICAgICAgICAgICJwcm9ndWFyZC1ydWxlcy5wcm8iCiAgICAgICAgICAgICkKICAgICAgICAgICAgaWYgKGtleXN0b3JlUHJvcGVydGllcy5pc05vdEVtcHR5KCkpIHsKICAgICAgICAgICAgICAgIHNpZ25pbmdDb25maWcgPSBzaWduaW5nQ29uZmlncy5nZXRCeU5hbWUoInJlbGVhc2UiKQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgY29tcGlsZU9wdGlvbnMgewogICAgICAgIHNvdXJjZUNvbXBhdGliaWxpdHkgPSBKYXZhVmVyc2lvbi5WRVJTSU9OXzE3CiAgICAgICAgdGFyZ2V0Q29tcGF0aWJpbGl0eSA9IEphdmFWZXJzaW9uLlZFUlNJT05fMTcKICAgIH0KICAgIGJ1aWxkRmVhdHVyZXMgewogICAgICAgIGNvbXBvc2UgPSB0cnVlCiAgICAgICAgLy8g55Sf5oiQIEJ1aWxkQ29uZmln77yIVkVSU0lPTl9OQU1FL0RFQlVH77yJ77ya5LiL6L29IFVBIOaLvOaOpeecn+WunueJiOacrOWPt++8iFAzLTE077yJ44CBCiAgICAgICAgLy8g5pel5b+X6Zeo5o6n562J5oyJ5p6E5bu657G75Z6L5Yy65YiG55qE6IO95Yqb5L6d6LWW6K+l57G7CiAgICAgICAgYnVpbGRDb25maWcgPSB0cnVlCiAgICB9CiAgICBsaW50IHsKICAgICAgICAvLyDlm7rljJbnjrDmnIkgd2FybmluZyDln7rnur/vvIg0MSsg5p2h5Y6G5Y+y5ZGK6K2m77yJ77yMQ0kg5Y+q5a+55paw5byV5YWl55qE6Zeu6aKY56Gs6Zeo56aB77yIwqc3LjTvvIkKICAgICAgICBiYXNlbGluZSA9IGZpbGUoImxpbnQtYmFzZWxpbmUueG1sIikKICAgIH0KICAgIHRlc3RPcHRpb25zIHsKICAgICAgICB1bml0VGVzdHMgewogICAgICAgICAgICAvLyDlhajlsYDlvILluLjlpITnkIblmajljZXmtYvkvJrop6bovr4gYW5kcm9pZC5qYXIg5qGp77yI5aaCIFR0c0xvZ2dlciDlhoXnmoQgTG9nIOiwg+eUqO+8ie+8mgogICAgICAgICAgICAvLyDmoanmlrnms5Xov5Tlm57pu5jorqTlgLzogIzpnZ7mipsgIlN0dWIhIiDlvILluLjvvIzkvb8gSlZNIOWNlea1i+aXoOmcgCBSb2JvbGVjdHJpYwogICAgICAgICAgICAvLyDljbPlj6/ov5DooYzop6bnorAgQW5kcm9pZCBBUEkg55qE5Luj56CB6Lev5b6E77yI5pei5pyJ57qv5Ye95pWw5Y2V5rWL5LiN5Y+X5b2x5ZON77yJCiAgICAgICAgICAgIGlzUmV0dXJuRGVmYXVsdFZhbHVlcyA9IHRydWUKICAgICAgICB9CiAgICB9Cn0KCmtvdGxpbiB7CiAgICBjb21waWxlck9wdGlvbnMgewogICAgICAgIGp2bVRhcmdldCA9IEp2bVRhcmdldC5KVk1fMTcKICAgIH0KfQoKYW5kcm9pZENvbXBvbmVudHMgewogICAgb25WYXJpYW50cyB7IHZhcmlhbnQgLT4KICAgICAgICB2YXJpYW50Lm91dHB1dHMuZm9yRWFjaCB7IG91dHB1dCAtPgogICAgICAgICAgICB2YWwgYWJpID0gb3V0cHV0LmZpbHRlcnMuZmlyc3RPck51bGwoKT8uaWRlbnRpZmllciA/OiAidW5pdmVyc2FsIgogICAgICAgICAgICAvLyBkZWJ1ZyDliqDlkI7nvIDvvIzpgb/lhY3kuI4gcmVsZWFzZSDkuqfnianlkIzlkI3lr7zoh7TmiYvliqjkuIrkvKDml7bmi7/plJnljIUKICAgICAgICAgICAgdmFsIGtpbmQgPSBpZiAodmFyaWFudC5uYW1lID09ICJkZWJ1ZyIpICItZGVidWciIGVsc2UgIiIKICAgICAgICAgICAgb3V0cHV0Lm91dHB1dEZpbGVOYW1lLnNldCgiVGFsa2lmeS12JHtvdXRwdXQudmVyc2lvbk5hbWUuZ2V0KCl9LSR7YWJpfSR7a2luZH0uYXBrIikKICAgICAgICB9CiAgICB9Cn0KCmRlcGVuZGVuY2llcyB7CiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmNvcmUua3R4KQogICAgLy8g5aSa6KeS6Imy5pa55qGI5L2/55So54us56uLIERhdGFTdG9yZe+8iOWNleS4queJiOacrOWMliBKU09O77yM5LqL5Yqh5YaF6K+75pS55YaZ77yJCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmRhdGFzdG9yZS5wcmVmZXJlbmNlcykKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHgubGlmZWN5Y2xlLnJ1bnRpbWUua3R4KQogICAgLy8g5bqU55So57qn5YmN5ZCO5Y+w55uR5ZCs77yIUHJvY2Vzc0xpZmVjeWNsZU93bmVy77yJ77yM5L6b6YGl5rWL5Zyo5q+P5qyh5Zue5Yiw5YmN5Y+w5pe25LiK5oql5ZCv5Yqo5L+h5Y+3CiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmxpZmVjeWNsZS5wcm9jZXNzKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5saWZlY3ljbGUudmlld21vZGVsLmNvbXBvc2UpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmxpZmVjeWNsZS5ydW50aW1lLmNvbXBvc2UpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmFjdGl2aXR5LmNvbXBvc2UpCiAgICBpbXBsZW1lbnRhdGlvbihwbGF0Zm9ybShsaWJzLmFuZHJvaWR4LmNvbXBvc2UuYm9tKSkKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHguY29tcG9zZS51aSkKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHguY29tcG9zZS51aS5ncmFwaGljcykKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHguY29tcG9zZS51aS50b29saW5nLnByZXZpZXcpCiAgICBpbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmNvbXBvc2UubWF0ZXJpYWwzKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5jb21wb3NlLm1hdGVyaWFsLmljb25zLmV4dGVuZGVkKQogICAgaW1wbGVtZW50YXRpb24obGlicy5hbmRyb2lkeC5uYXZpZ2F0aW9uLmNvbXBvc2UpCiAgICB0ZXN0SW1wbGVtZW50YXRpb24obGlicy5qdW5pdCkKICAgIC8vIOacrOWcsCBKVk0g5Y2V5rWL546v5aKD5rKh5pyJIEFuZHJvaWQg5a6e546w77yM5o+Q5L6b55yf5a6e55qEIG9yZy5qc29uIOS7peabv+S7oyBhbmRyb2lkLmphciDmoakKICAgIHRlc3RJbXBsZW1lbnRhdGlvbihsaWJzLm9yZy5qc29uKQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4Lmp1bml0KQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmVzcHJlc3NvLmNvcmUpCiAgICAvLyB1aS10ZXN0LWp1bml0NCDnrYnmtYvor5Xkvp3otZbml6Dni6znq4vniYjmnKzlj7fvvIzpnIDkuLogYW5kcm9pZFRlc3Qg6YWN572u5Y2V54us5byV5YWlIENvbXBvc2UgQk9NCiAgICBhbmRyb2lkVGVzdEltcGxlbWVudGF0aW9uKHBsYXRmb3JtKGxpYnMuYW5kcm9pZHguY29tcG9zZS5ib20pKQogICAgYW5kcm9pZFRlc3RJbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmNvbXBvc2UudWkudGVzdC5qdW5pdDQpCiAgICBkZWJ1Z0ltcGxlbWVudGF0aW9uKGxpYnMuYW5kcm9pZHguY29tcG9zZS51aS50b29saW5nKQogICAgZGVidWdJbXBsZW1lbnRhdGlvbihsaWJzLmFuZHJvaWR4LmNvbXBvc2UudWkudGVzdC5tYW5pZmVzdCkKCiAgICAvLyDpmL/ph4zkupHnmb7ngrzlrpjmlrkgRGFzaFNjb3BlIFNES++8jOeUqOS6jumAmuS5ieWNg+mXrjPor63pn7PlkIjmiJDlvJXmk44KICAgIGltcGxlbWVudGF0aW9uKGxpYnMuZGFzaHNjb3BlLnNkaykKCiAgICAvLyBPa0h0dHAg55So5LqO54Gr5bGx5byV5pOOIEhUVFAg5rWB5byPIEFQSe+8jOaUr+aMgei/nuaOpeWkjeeUqAogICAgLy8g54mI5pys5LiOIERhc2hTY29wZSBTREsg5YaF572uIE9rSHR0cCDkv53mjIHkuIDoh7TvvIg0LjEyLjDvvIkKICAgIGltcGxlbWVudGF0aW9uKGxpYnMub2todHRwKQoKICAgIC8vIOiFvuiur+S6kea1geW8jyBUVFMgU0RLCiAgICBpbXBsZW1lbnRhdGlvbihmaWxlcygibGlicy9zdHJlYW1fdHRzLXJlbGVhc2UtdjIuMC4xNi0yMDI2MDEyOC1kODBjYWZlLmFhciIpKQogICAgCiAgICAvLyBKTGF5ZXIg55So5LqOIE1QMyDmtYHlvI/op6PnoIEKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuamxheWVyKQoKICAgIC8vIFNoZXJwYS1vbm54IOacrOWcsCBUVFMg5o6o55CG5byV5pOOCiAgICAvLyDkvb/nlKjlrpjmlrkgc3RhdGljLWxpbmstb25ueHJ1bnRpbWUg5p6E5bu677yIb25ueHJ1bnRpbWUg6Z2Z5oCB57yW5YWlIGpuaSDlupPlubboo4HliarmnKrnlKjnrKblj7fvvInvvJsKICAgIC8vIEppdFBhY2sg5Z2Q5qCH5Lqn5Ye655qEIEFBUiDliqjmgIHpk77mjqXlhajph48gb25ueHJ1bnRpbWUgLnNv77yMNCBBQkkg5omT5YyF5pe2IEFQSyDohqjog4Doh7MgMTQwTUIrCiAgICBpbXBsZW1lbnRhdGlvbihmaWxlcygibGlicy9zaGVycGEtb25ueC1zdGF0aWMtbGluay1vbm54cnVudGltZS0xLjEzLjEuYWFyIikpCgogICAgLy8g5Y6L57yp5YyF6Kej5Y6L77yIdGFyLmJ6Mu+8ie+8jOeUqOS6juino+WOiyBlc3BlYWstbmctZGF0YSDnrYnmqKHlnovotYTmupAKICAgIGltcGxlbWVudGF0aW9uKGxpYnMuY29tbW9ucy5jb21wcmVzcykKfQ==
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import java.net.URI
+import java.util.Properties
+import java.util.UUID
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
+}
+
+// 签名配置（§7.3）：优先读取 keystore.properties（已 gitignore，不入库）。
+// 文件不存在时（本地 debug / 未配置密钥的 CI）不注册签名配置，release 产物
+// 不签名；正式发布经 release.yml 从 GitHub Secrets 注入。
+val keystoreProperties = Properties().apply {
+    val file = rootProject.file("keystore.properties")
+    if (file.exists()) file.inputStream().use { load(it) }
+}
+
+// ==================== 遥测构建配置（严格校验与运行时等价） ====================
+// 公开仓库不暴露自建服务器地址：维护者经 local.properties 或 CI 环境变量注入。
+// 这里与 TelemetryConfigValidator 使用同一套规则；任一值非法都拒绝构建，避免
+// 打出“看起来已启用、实际全部短路”的包。
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) file.inputStream().use { load(it) }
+}
+val umamiEndpoint = (localProperties.getProperty("umami.endpoint")
+    ?: providers.environmentVariable("UMAMI_ENDPOINT").orNull ?: "").trim()
+val umamiWebsiteId = (localProperties.getProperty("umami.websiteId")
+    ?: providers.environmentVariable("UMAMI_WEBSITE_ID").orNull ?: "").trim()
+val debugUmamiEndpoint = (localProperties.getProperty("umami.debugEndpoint")
+    ?: providers.environmentVariable("UMAMI_DEBUG_ENDPOINT").orNull ?: "").trim()
+val debugUmamiWebsiteId = (localProperties.getProperty("umami.debugWebsiteId")
+    ?: providers.environmentVariable("UMAMI_DEBUG_WEBSITE_ID").orNull ?: "").trim()
+val telemetryRequired = (providers.gradleProperty("telemetryRequired").orNull
+    ?: providers.environmentVariable("TALKIFY_REQUIRE_TELEMETRY").orNull)
+    ?.equals("true", ignoreCase = true) == true
+
+val TELEMETRY_UUID_PATTERN =
+    Regex("^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+
+/** 返回错误说明；null 表示配置合法。空值由调用方按“未配置”处理。 */
+fun telemetryConfigError(endpoint: String, websiteId: String): String? {
+    if (endpoint.isBlank() || websiteId.isBlank()) return "endpoint 与 websiteId 必须同时提供"
+    if (endpoint.any { it.isWhitespace() || it.isISOControl() }) return "endpoint 含空白或控制字符"
+    if (!TELEMETRY_UUID_PATTERN.matches(websiteId)) return "websiteId 不是 UUID"
+    if (runCatching { UUID.fromString(websiteId) }.isFailure) return "websiteId 不是 UUID"
+    val uri = runCatching { URI(endpoint) }.getOrNull() ?: return "endpoint 不是合法 URI"
+    if (!uri.scheme.equals("https", ignoreCase = true)) return "endpoint 必须为 HTTPS"
+    if (uri.host.isNullOrBlank()) return "endpoint 缺少 host"
+    if (uri.port == 0 || uri.port > 65535) return "endpoint 端口非法"
+    if (!uri.userInfo.isNullOrEmpty()) return "endpoint 不得包含凭据"
+    if (uri.rawQuery != null) return "endpoint 不得包含 query"
+    if (uri.rawFragment != null) return "endpoint 不得包含 fragment"
+    return null
+}
+
+val releaseConfigError = if (umamiEndpoint.isBlank() && umamiWebsiteId.isBlank()) {
+    null
+} else {
+    telemetryConfigError(umamiEndpoint, umamiWebsiteId)
+}
+if (releaseConfigError != null) {
+    throw GradleException("遥测配置非法：$releaseConfigError")
+}
+if (telemetryRequired && (umamiEndpoint.isBlank() || umamiWebsiteId.isBlank())) {
+    throw GradleException("遥测配置被声明为必需（telemetryRequired=true），但 umami.endpoint / umami.websiteId 缺失")
+}
+val telemetryStatus = if (umamiEndpoint.isBlank() || umamiWebsiteId.isBlank()) {
+    "Telemetry: DISABLED (missing configuration)"
+} else {
+    "Telemetry: ENABLED (validated endpoint and website ID)"
+}
+
+val debugConfigError = if (debugUmamiEndpoint.isBlank() && debugUmamiWebsiteId.isBlank()) {
+    null
+} else {
+    telemetryConfigError(debugUmamiEndpoint, debugUmamiWebsiteId)
+}
+if (debugConfigError != null) {
+    throw GradleException("debug 遥测配置非法：$debugConfigError")
+}
+val debugTelemetryStatus = if (debugUmamiEndpoint.isBlank() || debugUmamiWebsiteId.isBlank()) {
+    "Telemetry(debug): DISABLED (missing debug configuration)"
+} else {
+    "Telemetry(debug): ENABLED (validated debug endpoint and website ID)"
+}
+
+/** 把任意配置值转义为 Java/Kotlin 字符串字面量，避免引号/反斜杠注入 BuildConfig */
+fun javaStringLiteral(value: String): String = buildString {
+    append('"')
+    value.forEach { char ->
+        when (char) {
+            '\\' -> append("\\\\")
+            '"' -> append("\\\"")
+            '\n' -> append("\\n")
+            '\r' -> append("\\r")
+            '\t' -> append("\\t")
+            else -> if (char.code < 0x20) append("\\u%04x".format(char.code)) else append(char)
+        }
+    }
+    append('"')
+}
+
+val writeTelemetryStatus = tasks.register("writeTelemetryStatus") {
+    val release = telemetryStatus
+    val debug = debugTelemetryStatus
+    val output = layout.buildDirectory.file("telemetry/telemetry-status.txt")
+    inputs.property("releaseStatus", release)
+    inputs.property("debugStatus", debug)
+    outputs.file(output)
+    doLast {
+        val file = output.get().asFile
+        file.parentFile.mkdirs()
+        file.writeText("$release\n$debug\n")
+    }
+}
+
+tasks.matching { it.name == "assembleRelease" }.configureEach {
+    dependsOn(writeTelemetryStatus)
+}
+
+/**
+ * 构建侧校验矩阵：与运行时单测使用同一组用例。
+ * 只验证纯函数，不读取真实配置，也不访问网络。
+ */
+val telemetryValidationResults: List<String> = run {
+    val validId = "123e4567-e89b-12d3-a456-426614174000"
+    listOf(
+        Triple("https://telemetry.example.com", validId, true),
+        Triple("https://telemetry.example.com/umami", validId, true),
+        Triple("https:///", validId, false),
+        Triple("https://example.com/%zz", validId, false),
+        Triple("https://user:pass@example.com", validId, false),
+        Triple("https://example.com?x=1", validId, false),
+        Triple("https://example.com#frag", validId, false),
+        Triple("http://example.com", validId, false),
+        Triple("https://example.com:99999", validId, false),
+        Triple("https://example.com", "------------------------------------", false),
+        Triple("https://example.com", "123e4567-e89b-12d3-a456-42661417400", false),
+    ).map { (endpoint, websiteId, expectedValid) ->
+        val actualValid = telemetryConfigError(endpoint, websiteId) == null
+        "endpoint=$endpoint websiteId=$websiteId expected=$expectedValid actual=$actualValid ok=${actualValid == expectedValid}"
+    }
+}
+
+tasks.register("verifyTelemetryConfigMatrix") {
+    val results = telemetryValidationResults
+    doLast {
+        results.forEach { line ->
+            check(line.endsWith("ok=true")) { "遥测配置校验矩阵不一致: $line" }
+        }
+    }
+}
+
+android {
+    namespace = "com.github.lonepheasantwarrior.talkify"
+    compileSdk {
+        version = release(37)
+    }
+
+    defaultConfig {
+        applicationId = "com.github.lonepheasantwarrior.talkify.fork"
+        minSdk = 24
+        targetSdk = 37
+        versionCode = 3901
+        versionName = "1.0.37-fork.1"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // 与 splits.abi.include 保持一致：universal 包收录的是通过 abiFilters 的全部 ABI
+        // （splits.include 只约束独立 APK），x86 需在此排除——其引擎库仍含全量 onnxruntime
+        ndk {
+            abiFilters += listOf("arm64-v8a", "x86_64")
+        }
+
+        // 匿名遥测配置在文件顶部统一解析并严格校验；这里只负责注入。
+        // 经 providers.environmentVariable 读取（而非 System.getenv）：configuration
+        // cache 将其追踪为输入，环境变量变化会触发重新配置，避免复用缓存条目打出旧值。
+        if (telemetryStatus.contains("DISABLED")) {
+            logger.lifecycle("提示：未注入生产 Umami 配置，release 包遥测将全部短路（发布记录须注明）")
+        }
+        buildConfigField("String", "UMAMI_ENDPOINT", javaStringLiteral(umamiEndpoint))
+        buildConfigField("String", "UMAMI_WEBSITE_ID", javaStringLiteral(umamiWebsiteId))
+    }
+
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            // 一次构建产出 arm64-v8a / armeabi-v7a / x86_64 独立 APK + universal 兜底包
+            // x86 不再打包：真实设备不存在，且 static-link AAR 的 x86 引擎库仍含独立 onnxruntime（34.5MB）
+            include("arm64-v8a", "armeabi-v7a", "x86_64")
+            isUniversalApk = true
+        }
+    }
+
+    signingConfigs {
+        if (keystoreProperties.isNotEmpty()) {
+            create("release") {
+                storeFile = rootProject.file(keystoreProperties.getProperty("storeFile"))
+                storePassword = keystoreProperties.getProperty("storePassword")
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            // U13：debug 联调只使用独立测试站点；未提供 debug 配置时保持空值，
+            // 绝不回退到生产 endpoint
+            buildConfigField("String", "UMAMI_ENDPOINT", javaStringLiteral(debugUmamiEndpoint))
+            buildConfigField("String", "UMAMI_WEBSITE_ID", javaStringLiteral(debugUmamiWebsiteId))
+        }
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            if (keystoreProperties.isNotEmpty()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        compose = true
+        // 生成 BuildConfig（VERSION_NAME/DEBUG）：下载 UA 拼接真实版本号（P3-14）、
+        // 日志门控等按构建类型区分的能力依赖该类
+        buildConfig = true
+    }
+    lint {
+        // 固化现有 warning 基线（41+ 条历史告警），CI 只对新引入的问题硬门禁（§7.4）
+        baseline = file("lint-baseline.xml")
+    }
+    testOptions {
+        unitTests {
+            // 全局异常处理器单测会触达 android.jar 桩（如 TtsLogger 内的 Log 调用）：
+            // 桩方法返回默认值而非抛 "Stub!" 异常，使 JVM 单测无需 Robolectric
+            // 即可运行触碰 Android API 的代码路径（既有纯函数单测不受影响）
+            isReturnDefaultValues = true
+        }
+    }
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_17
+    }
+}
+
+androidComponents {
+    onVariants { variant ->
+        variant.outputs.forEach { output ->
+            val abi = output.filters.firstOrNull()?.identifier ?: "universal"
+            // debug 加后缀，避免与 release 产物同名导致手动上传时拿错包
+            val kind = if (variant.name == "debug") "-debug" else ""
+            output.outputFileName.set("Talkify-v${output.versionName.get()}-${abi}${kind}.apk")
+        }
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    // 多角色方案使用独立 DataStore（单个版本化 JSON，事务内读改写）
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    // 应用级前后台监听（ProcessLifecycleOwner），供遥测在每次回到前台时上报启动信号
+    implementation(libs.androidx.lifecycle.process)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.graphics)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.androidx.navigation.compose)
+    testImplementation(libs.junit)
+    // 本地 JVM 单测环境没有 Android 实现，提供真实的 org.json 以替代 android.jar 桩
+    testImplementation(libs.org.json)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    // ui-test-junit4 等测试依赖无独立版本号，需为 androidTest 配置单独引入 Compose BOM
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // 阿里云百炼官方 DashScope SDK，用于通义千问3语音合成引擎
+    implementation(libs.dashscope.sdk)
+
+    // OkHttp 用于火山引擎 HTTP 流式 API，支持连接复用
+    // 版本与 DashScope SDK 内置 OkHttp 保持一致（4.12.0）
+    implementation(libs.okhttp)
+
+    // 腾讯云流式 TTS SDK
+    implementation(files("libs/stream_tts-release-v2.0.16-20260128-d80cafe.aar"))
+    
+    // JLayer 用于 MP3 流式解码
+    implementation(libs.jlayer)
+
+    // Sherpa-onnx 本地 TTS 推理引擎
+    // 使用官方 static-link-onnxruntime 构建（onnxruntime 静态编入 jni 库并裁剪未用符号）；
+    // JitPack 坐标产出的 AAR 动态链接全量 onnxruntime .so，4 ABI 打包时 APK 膨胀至 140MB+
+    implementation(files("libs/sherpa-onnx-static-link-onnxruntime-1.13.1.aar"))
+
+    // 压缩包解压（tar.bz2），用于解压 espeak-ng-data 等模型资源
+    implementation(libs.commons.compress)
+}
